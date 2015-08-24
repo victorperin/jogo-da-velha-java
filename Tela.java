@@ -33,6 +33,7 @@ public class Tela extends JFrame implements ActionListener{
       for(int y=0;y<3;y++){
         botoes[x][y] = new Botao();
         this.add(botoes[x][y]);
+        botoes[x][y].addActionListener(this);
       }
     }
 
