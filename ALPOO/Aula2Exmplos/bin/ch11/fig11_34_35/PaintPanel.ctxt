@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=PaintPanel()
+comment1.params=g
+comment1.target=void\ paintComponent(Graphics)
+numComments=2
