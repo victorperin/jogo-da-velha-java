@@ -41,6 +41,34 @@ public class Tela extends JFrame implements ActionListener{
 
 
   public void actionPerformed(ActionEvent evento){
+    for(int x=0;x<3;x++){
+      for(int y=0;y<3;y++){
+
+        if(evento.getSource() == botoes[x][y]){
+          System.out.println(x + " " + y);
+
+          String texto = (contadorCliques % 2 == 0)?"X":"O";
+
+          botoes[x][y].setText(texto);
+          botoes[x][y].setEnabled(false);
+          contadorCliques++;
+          System.out.println(contadorCliques);
+        }
+
+
+      }
+    }
+    if(contadorCliques==9){ //Assim que o jogo terminar
+      for(int x=0;x<3;x++){
+        for(int y=0;y<3;y++){
+          botoes[x][y].setText("");
+          botoes[x][y].setEnabled(true);
+          contadorCliques=0;
+        }
+      }
+
+    }
+
   }
 
 
