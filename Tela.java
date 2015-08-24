@@ -12,6 +12,9 @@ public class Tela extends JFrame implements ActionListener{
 
   private static final long serialVersionUID = 1L;
 
+  private Botao[][] botoes = new Botao[3][3];
+  private int contadorCliques = 0;
+
   public Tela(){
     super("Jogo da Velha");
     //JFrame frame = new JFrame("Exemplo de Frame");
@@ -24,7 +27,7 @@ public class Tela extends JFrame implements ActionListener{
 
 
 
-    Botao[][] botoes = new Botao[3][3];
+
 
     for(int x=0;x<3;x++){
       for(int y=0;y<3;y++){
